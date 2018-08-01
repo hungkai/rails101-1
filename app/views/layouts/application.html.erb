@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Rails1011</title>
+    <title>Rails101-1</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,10 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="cotainer-fluid">
+      <%= render "common/navbar" %>
+      <%= yield %>
+    </div>
+    <%= render "common/footer" %>
   </body>
 </html>
